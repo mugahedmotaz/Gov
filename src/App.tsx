@@ -53,7 +53,7 @@ function Navbar() {
 
 function App() {
   return (
-    <div dir="rtl" style={{fontFamily: 'Tajawal, Arial, sans-serif', background: '#f7f7f7', minHeight: '100vh', display: 'flex', flexDirection: 'column', minHeight: '100vh'}}>
+    <div dir="rtl" style={{fontFamily: 'Tajawal, Arial, sans-serif', background: '#f7f7f7', minHeight: '100vh', display: 'flex', flexDirection: 'column'}}>
       <Router>
         <Navbar />
         <div style={{maxWidth: 900, margin: '32px auto', background: '#fff', borderRadius: 12, boxShadow: '0 2px 8px #0001', padding: 24, flex: 1}}>
