@@ -1,6 +1,7 @@
 import { FaPassport, FaCar, FaIdCard, FaUserShield, FaSearch } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import BackButton from '../components/BackButton';
+import type { JSX } from 'react';
 
 // ملخص صفحة الخدمات:
 // - عرض جميع الخدمات الإلكترونية للوزارة في بطاقات منفصلة مع أيقونة ووصف.
