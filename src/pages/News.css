@@ -1,0 +1,111 @@
+.news-page {
+  font-family: 'Cairo', 'Tajawal', Arial, sans-serif;
+  background: #f7f9fa;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+.news-header {
+  background: linear-gradient(90deg, #0d47a1 60%, #1976d2 100%);
+  color: #fff;
+  padding: 2rem 1rem 1.5rem 1rem;
+  text-align: right;
+  border-radius: 0 0 24px 24px;
+  margin-bottom: 2rem;
+}
+.news-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.news-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+.news-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px 0 rgba(13, 71, 161, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.news-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 24px 0 rgba(13, 71, 161, 0.13);
+}
+.news-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #e3eaf2;
+}
+.news-content {
+  padding: 1.2rem 1rem 1rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news-content h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.7rem 0;
+  color: #0d47a1;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.news-date {
+  font-size: 0.95rem;
+  color: #1976d2;
+  opacity: 0.8;
+  align-self: flex-end;
+}
+.news-suggestions {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 1px 6px 0 rgba(13, 71, 161, 0.07);
+  margin: 0 1rem;
+  padding: 1.5rem 1.2rem;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.news-suggestions h3 {
+  color: #0d47a1;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.news-suggestions ul {
+  padding-right: 1.2rem;
+  margin: 0;
+}
+.news-suggestions li {
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+}
+@media (max-width: 600px) {
+  .news-header {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    border-radius: 0 0 14px 14px;
+  }
+  .news-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.3rem;
+  }
+  .news-suggestions {
+    padding: 1rem 0.5rem;
+  }
+}
