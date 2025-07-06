@@ -7,7 +7,7 @@ import About from './pages/About'
 import Services from './pages/Services'
 import News from './pages/News'
 import Articles from './pages/Articles'
-import UnitsGuide from './pages/UnitsGuide'
+// import UnitsGuide from './pages/UnitsGuide'
 import Laws from './pages/Laws'
 import Contact from './pages/Contact'
 import PassportService from './pages/PassportService';
@@ -26,7 +26,7 @@ function Navbar() {
     { to: '/services', label: 'الخدمات' },
     { to: '/news', label: 'الأخبار' },
     { to: '/articles', label: 'المقالات' },
-    { to: '/units', label: 'دليل الوحدات' },
+    // { to: '/units', label: 'دليل الوحدات' },
     { to: '/laws', label: 'القوانين' },
     { to: '/contact', label: 'اتصل بنا' },
   ];
@@ -68,7 +68,7 @@ function App() {
             <Route path="/services/inquiry" element={<InquiryService />} />
             <Route path="/news" element={<News />} />
             <Route path="/articles" element={<Articles />} />
-            <Route path="/units" element={<UnitsGuide />} />
+            {/* <Route path="/units" element={<UnitsGuide />} /> */}
             <Route path="/laws" element={<Laws />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
